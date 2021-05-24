@@ -21,7 +21,7 @@ namespace Tasker.Pages
 
         public IActionResult OnPost()
         {
-            if(!ModelState.IsValid)
+            if(ModelState.IsValid == false)
             {
                 return Page();
             }
