@@ -10,8 +10,9 @@
         <th>Title</th>
         <th>Description</th>
         <th>Priority</th>
+    </thead>
 
-        @foreach (var task in Model.Tasks)
+        @foreach (Tasker.Task task in Model.Tasks)
         {
             <tr>
                 <td>@task.Id</td>
@@ -20,5 +21,4 @@
                 <td>@task.Priority</td>
             </tr>
         }
-    </thead>
 </table>
