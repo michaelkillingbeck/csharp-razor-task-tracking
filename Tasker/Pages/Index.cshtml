@@ -11,7 +11,7 @@
         <th>Description</th>
         <th>Priority</th>
 
-        @foreach (Tasker.Task task in Model.Tasks)
+        @foreach (var task in Model.Tasks)
         {
             <tr>
                 <td>@task.Id</td>
