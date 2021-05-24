@@ -17,7 +17,7 @@ namespace Tasker.Pages
 
         public void OnGet()
         {
-            Tasks = _context.Tasks.OrderBy(task => task.Priority);
+            Tasks = _context.Tasks.OrderBy(x => x.Priority);
         }
     }
 }
